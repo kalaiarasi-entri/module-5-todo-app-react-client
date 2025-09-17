@@ -20,6 +20,15 @@ export default function AddTask() {
   };
   return (
     <div className="card">
+      <style>
+        {`
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: invert(1); /* makes the calendar icon white */
+      cursor: pointer;
+    }
+  `}
+      </style>
+
       <h3 className="font-semibold mb-3">Add Task</h3>
       {msg && <div className="text-sm text-green-500 mb-2">{msg}</div>}
       <form onSubmit={handleSubmit} className="space-y-3">
@@ -37,11 +46,12 @@ export default function AddTask() {
           placeholder="Description"
         />
         <input
-          className="input"
+          className="input bg-zinc-900 text-white"
           type="date"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
         />
+
         <div className="flex justify-end">
           <button className="btn bg-blue-600">Add Task</button>
         </div>
