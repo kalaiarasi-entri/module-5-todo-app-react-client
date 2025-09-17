@@ -1,0 +1,1 @@
+import api from './axiosConfig'; export const register=(d)=>api.post('/auth/register', d); export const login=(d)=>api.post('/auth/login', d);

@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html.dark body { background: #071021; color: #e6eef8; }
+.container { max-width:1100px; margin:0 auto; padding:1rem; }
+.card { background:#0f1724; padding:1rem; border-radius:.75rem; box-shadow:0 6px 18px rgba(2,6,23,0.6); }
+.input { @apply w-full p-2 rounded bg-transparent border border-zinc-700 placeholder:text-zinc-500; color:#dbe7ff }
+.btn { @apply px-3 py-1 rounded text-white }
+.small { color:#9aa4b2; font-size:.9rem }
+.nav-link { @apply px-3 py-2 rounded hover:bg-zinc-800 }

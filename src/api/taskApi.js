@@ -1,0 +1,1 @@
+import api from './axiosConfig'; export const getTasks=()=>api.get('/tasks'); export const addTask=(d)=>api.post('/tasks', d); export const updateTask=(id,d)=>api.put(`/tasks/${id}`, d); export const deleteTask=(id)=>api.delete(`/tasks/${id}`);
