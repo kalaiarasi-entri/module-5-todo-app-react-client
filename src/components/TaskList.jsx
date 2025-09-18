@@ -51,6 +51,8 @@ export default function TaskList() {
       <h3 className="font-semibold mb-3">Tasks</h3>
       {loading ? (
         <div>Loading...</div>
+      ) : tasks.length === 0 ? (
+        <div className="text-center text-gray-500 py-4">No records found</div>
       ) : (
         <ul className="space-y-3">
           {tasks.map((t) => (
