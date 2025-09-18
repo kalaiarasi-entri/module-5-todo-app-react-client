@@ -9,7 +9,7 @@ export default function Home() {
       <div className="md:col-span-2 bg-white card">
         <h2 className="text-xl font-semibold mb-2">Welcome to Todo</h2>
         <p className="small mb-4">
-          Secure registration/login with JWT and full CRUD tasks.
+         Manage personal task for user.
         </p>
         {!logged && (
           <div>
