@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-6">
       <div className="md:col-span-2 bg-white card">
-        <h2 className="text-xl font-semibold mb-2">Welcome to Todo</h2>
+        <h2 className="text-xl font-semibold mb-2">Welcome to Personal Task Manager Application</h2>
         <p className="small mb-4">
          Manage personal task for user.
         </p>
